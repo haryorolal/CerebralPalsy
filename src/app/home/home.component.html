@@ -1,0 +1,72 @@
+<header class="app-container" >
+        <mat-toolbar color='primary' fxLayoutGap='8px' class="app-toolbar fixed-top" [class.app-is-mobile]='media.isActive("xs")'>
+          <mat-icon  mat-icon-button (click)='sidenav.toggle()' style="color: black !important">menu</mat-icon>
+          <img mat-card-image src="assets/images/paedLogo.jpg">
+          <a style="text-decoration: none" routerLink='/home/user/Dashboard'><span class="mat-h2" style="font-size: large; color: black"> Paediatric Research</span> </a>
+      
+          <span class="flex-spacer"></span>
+          <button mat-mini-fab routerLink="/home/user/userprofile"   aria-label="Profile"><mat-icon style="color: black !important">account_circle</mat-icon></button>
+          <button mat-mini-fab (click)="signout()"  matTooltip="Logout" arial-label="Logout"><mat-icon style="color: black !important">lock_open</mat-icon></button>        
+        </mat-toolbar>
+    
+        <mat-sidenav-container class="app-sidenav-container" [style.marginTop.px]='media.isActive("xs") ? 56 : 0'>
+          <mat-sidenav #sidenav [mode]='media.isActive("xs") ? "over" : "side"' [fixedInViewport]='media.isActive("xs")' fixedTopGap='80'>
+            <app-layout></app-layout>
+          </mat-sidenav>
+          <mat-sidenav-content class="contain">
+            <router-outlet></router-outlet>
+          </mat-sidenav-content>
+    
+        </mat-sidenav-container>
+      
+</header>
+
+
+
+
+    
+    
+
+<!--<div class="app-container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" >
+                <div class="apptoolbar" >
+                    <div  class="navbar-toggler"  data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <mat-icon  style="color: black !important">menu</mat-icon> &nbsp; &nbsp;&nbsp;&nbsp;           
+                            <a mat-icon-button routerLink='/user/Dashboard'><span style="font-size: large; font-weight: bold; color: tomato" > Paediatric Research</span> </a>       
+                    </div>
+
+                    <span class="flex-spacer"></span>
+                    <div class="homeLogin" *ngIf="displayAccountIcons">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a  class="nav-link" routerLink='/user/viewUser' routerLinkActive="active" style="color: red"><i class="fa fa-user" ></i></a>
+                                </li>
+                                <li class="nav-link">
+                                    --<a *ngIf="!isAuthenticated" class="nav-link" [routerLink]="['Login']"><i class="fa fa-user" routerLinkActive="active" ></i>Login</a>--
+                                    <a  class="nav-link" routerLink='/user/logout' routerLinkActive="active" style="color: red"><i class="fa fa-lock"></i></a>
+                                </li>                        
+                            </ul>
+                    </div>
+                
+                </div>               
+                
+        </nav>
+        
+  
+    <div class="collapse layout" id="navbarToggleExternalContent" *ngIf="displayAccountIcons">
+        <app-layout></app-layout>
+    </div>
+
+    <div *ngIf='displayLogin'>
+        <app-login></app-login>
+    </div>
+
+    <div *ngIf='!displayLogin'>
+        <span class="mat-display-3">Abeg sign out jare</span>
+    </div> 
+
+    <div class="contain">
+        <router-outlet></router-outlet>
+    </div> 
+
+</div>-->

@@ -1,0 +1,62 @@
+
+	
+	
+		<mat-card>		
+				<img mat-card-image src="assets/images/paedLogo.jpg">
+				<mat-card-title>Cerebral Palsy Research</mat-card-title>		
+				
+			<mat-card-content>
+				<form [formGroup]='loginForm' (ngSubmit)='login(loginForm)' >
+					<p >
+						
+						<mat-form-field >
+							<!--<label>Username</label>-->
+							<input matInput placeholder="Enter your Username"  formControlName='UserName'>
+							
+							<!-- <em *ngIf="loginForm.controls.UserName?.invalid && loginForm.controls.UserName?.touched" >Required</em>
+							<mat-error *ngIf='loginForm.get("UserName").hasError("required")'>UserName is required</mat-error>
+							<mat-error *ngIf='loginForm.get("UserName").hasError("UserName")'>UserName is not valid</mat-error> -->
+						</mat-form-field>
+					</p>
+	
+					<p >
+						
+						<mat-form-field >
+							<!--<label>Password</label>-->
+							<input matInput placeholder="Enter your Password"  type="password" formControlName='Password'>
+							<!--<em *ngIf="loginForm.controls.Password?.invalid && loginForm.controls.Password?.touched" >Required</em>
+							<mat-hint>Minimum of 8 characters</mat-hint>
+						    <mat-error *ngIf='loginForm.get("password").hasError("required")'>Password is required</mat-error>
+							<mat-error *ngIf='loginForm.get("password").hasError("minlenght")'>Password is at least 8 characters long</mat-error>
+							<mat-error *ngIf='loginForm.get("password").hasError("maxlenght")'>Password cannot be longer than 50 characters</mat-error>-->
+						</mat-form-field>
+						
+					</p>
+
+					<!-- <div fxLayout='row' fxLayoutAlign='start center' fxLayoutGap='10px'>
+						
+						<mat-form-field appearance="fill">	
+								<mat-label>Select Role</mat-label>
+								<mat-select  formControlName='Role'>										
+										<mat-option value="Admin">Admin</mat-option>
+										<mat-option value="User">User</mat-option>
+								</mat-select>							
+						</mat-form-field>
+						<br/>
+					</div> -->
+					
+						<p *ngIf='loginError' class="mat-caption error">{{loginError}}</p>
+						
+						<div class="button">
+							<button type="submit" [disabled]='loginForm.invalid' mat-raised-button> Login </button>
+						</div>
+
+						
+						<div style="margin-top: 20px; text-align:center; color:red;">
+							<mat-label>Forgot Password?</mat-label>
+						</div>
+
+				</form>
+			</mat-card-content>
+		</mat-card>
+

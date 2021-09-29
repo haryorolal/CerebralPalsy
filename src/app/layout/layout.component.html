@@ -1,0 +1,36 @@
+
+<mat-nav-list >
+    <!-- Sidebar  -->
+      <nav id="sidebar"  class="border-success" *ngIf="isAuthenticate()">
+        <div class="sidebar-header " style="background-color: rgb(242, 242, 242)" >
+            <h6 style="color: black; font-weight: bold">{{title}}</h6>        
+            <img id="imgRound" src="assets/images/profile (1).png" alt="Avatar">
+            <!--Using interpolation to call user name-->
+            
+            
+            <div class="row"  >
+                  <span class="userProfile">  {{currentUser.Firstname}} {{currentUser.Lastname}} </span><br/> 
+            </div>
+        </div>
+        <ul class="list-unstyled components">
+            <li>
+                <a  routerLink='/home/user/Dashboard' routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"><i class="fa fa-home"></i>Home</a>            
+            </li>
+            <li>
+                <a routerLink="/home/aboutUs" class="glyphicon glyphicon-info-sign" routerLinkActive="active" >ABOUT</a>
+            </li>
+            
+            <li>
+                <a routerLink='/home/patient/patientRecord' class="glyphicon glyphicon-eye-open"  routerLinkActive="active" >VIEW RECORDS</a>
+            </li>
+            <li>
+                <a  routerLink='/home/patient/patientRegistration' class="fa fa-user"  routerLinkActive="active" >REGISTER PATIENT</a>
+               
+            </li>
+            <li>
+                <a routerLink='/home/manage/manageUser' class="fa fa-user"  routerLinkActive="active" >MANAGE USER</a>
+            </li>
+        </ul>
+     </nav>
+
+</mat-nav-list>

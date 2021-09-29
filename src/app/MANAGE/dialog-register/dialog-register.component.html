@@ -1,0 +1,55 @@
+<i mat-raised-button (click)="closeDialog()" style="color: red;" class="fa fa-close"></i>
+        
+         
+       <mat-card>
+            <legend style="color:gray">Update User</legend>  
+
+               <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="10px" fxFlex.xs="100%" >
+                   <form [formGroup]="userForm" (ngSubmit)="updateUser(userForm.value)" >                           
+                                       <div>                                        
+                                               <mat-label>Firstname</mat-label>
+                                               <mat-form-field fxFlex > 
+                                                    <input matInput formControlName="FirstName" />
+                                                </mat-form-field>
+                                                </div>
+                                       <div>                                        
+                                               <mat-label>Lastname</mat-label>
+                                               <mat-form-field fxFlex>
+                                                    <input matInput formControlName="LastName" placeholder="Lastname" />
+                                               </mat-form-field>  
+                                            </div> 
+               
+                                       <div>                                        
+                                           <mat-label>UserName</mat-label>
+                                           <mat-form-field fxFlex>
+                                                <input matInput  formControlName="UserName" placeholder="Username"  />
+                                            </mat-form-field>  
+                                        </div>              
+                                       
+                                       <div>                                        
+                                            <mat-label>Password</mat-label>
+                                            <mat-form-field fxFlex>
+                                                <input matInput  formControlName="Password"   />
+                                            </mat-form-field>
+                                        </div>
+                                     
+                                       <div fxLayout="row">                                            
+                                               <mat-label>Role</mat-label>
+                                               <mat-select formControlName="Role"  fxFlex="30%" required >
+                                                   <mat-option value="Admin">Admin</mat-option>
+                                                   <mat-option value="User">User</mat-option>
+                                               </mat-select>
+                                        </div>
+   
+                                       <div fxLayout="row" style="margin-top: 20px;">
+                                            <div style="float: left">    
+                                                <button mat-raised-button type="submit" >Submit</button>   
+                                            </div>
+                                       </div>
+                                   <!--<p *ngIf="" style="color:rgb(0, 128, 0);font-size:20px;font-weight:bold" Class="success" align="left">  
+                                   {{message}}  
+                                  </p> -->                
+                   </form>         
+               </div>    
+       </mat-card>
+   

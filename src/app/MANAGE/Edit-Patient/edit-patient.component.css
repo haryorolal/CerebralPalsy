@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+  mat-card{
+    width: 90%;
+}
+
+.table{
+    color: gray;
+}
+.tdead-dark{
+    color: black;
+}

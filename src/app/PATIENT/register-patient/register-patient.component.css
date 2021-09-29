@@ -1,0 +1,44 @@
+/* Only for snippet */
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+mat-card{
+  width: 90%;
+}
+
+.double-nav .breadcrumb-dn {
+    color: #fff;
+  }
+  .button-collapse i {
+    color: #fff
+  }
+  #RegPForm{
+    width: 100%;
+    height: 100%;
+    margin-left: 2%;
+    color: gray;
+  }
+legend{
+  color: black;
+}
+ 
+  .buttonS{
+    background-color: green; 
+    border-bottom-right-radius: 1px solid white;
+    width: 100px;
+    height: 50px;
+  }
+  input.invalid{
+    background-color: #ffdddd;
+  }
+
+  button{
+    color: green !important;
+  }
+
+  .error{
+    color: red;
+  }

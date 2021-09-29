@@ -1,0 +1,68 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.error{
+  color: red;
+}
+
+mat-card{
+  box-shadow: 0 0 18px  rgba(49, 32, 15, 0.2), 0 0 20px 0 rgba(83, 68, 17, 0.19) !important;  
+}
+
+.mat-card-image {
+  width: 120px !important;
+  height: 100px;
+  position: relative;
+  left: 35%;
+  padding-top: 10px;
+
+}
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+
+
+mat-card-title, mat-card-subtitle,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+
+
+
+/*change color of label/placeholder*/
+::ng-deep.mat-form-field-label{
+  color: gray !important;
+  font-size: 10px !important;
+}
+
+/*change color of underline*/
+::ng-deep.mat-form-field-underline{
+  background-color: chocolate !important;
+}
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  background-color: chocolate;
+  color: white;
+}
+
+.mat-raised-button{
+  display: flex !important;
+  justify-content: center !important;
+  background-color: chocolate !important;
+  color: white !important ;
+}
+
+.button:hover{
+  background-color: white;
+  color: chocolate;
+}

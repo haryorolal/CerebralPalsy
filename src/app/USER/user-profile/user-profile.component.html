@@ -1,0 +1,17 @@
+<mat-card *ngIf="isAuthenticate()">
+        <mat-card-header style="color: black">
+            <mat-card-title>
+                <a  style="color:gray; font-size:medium" > Welcome {{currentUser.Firstname}}, You have a beautiful profile</a><br/>
+            </mat-card-title>
+            <!--<div mat-card-avatar><mat-icon>account_circle</mat-icon></div>-->
+
+        </mat-card-header>
+        <mat-card-content>
+            <p>Firstname: &nbsp;<span class="mat-input bold" style="color: red"> {{currentUser.Firstname }}</span> </p>
+            <p>Lastname: &nbsp;<span class="mat-input bold">{{currentUser.Lastname}}</span> </p>
+            <p>UserName: &nbsp;<span class="mat-input bold">{{currentUser.Username}}</span> </p>
+            <p>Role: &nbsp;<span class="mat-input bold">{{currentUser.Role}}</span> </p>
+        </mat-card-content>
+
+        <p style="background-color: red; text-align: center; color: white">...</p>
+</mat-card>

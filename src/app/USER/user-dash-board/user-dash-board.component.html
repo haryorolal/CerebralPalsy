@@ -1,0 +1,46 @@
+
+    <mat-card>
+        <mat-card-content id="sect-one">
+            <div class="row"> 
+                    <div class="col-lg-6 col-lg-6">
+                        <div id="to-right" class="card  border-success bg-light mb-3" [routerLink]="['/home/patient/patientRegistration']"  >
+                            <div class="card-header bg-success" style="color: white; font-weight: bold; padding-left: 4px; ">REGISTER NEW PATIENT</div>
+                
+                            <div class="card-body" style="color:black; padding-left: 10px;">
+                                <h4 class="card-title" ><i class="fa fa-user" ></i>PATIENT REGISTRATION</h4>
+                                <p class="card-text">REGISTER PATIENT HERE</p>
+                            </div>        
+                        </div>
+                
+                        <div id="to-right" class="card text-white bg-success mb-3"   [routerLink]="['/home/manage/manageUser']">
+                            <div class="card-header bg-light" style="color: black; font-weight: bold; padding-left: 4px;">MANAGE USER</div>
+                
+                            <div class="card-body" style="padding-left: 10px;">
+                                <h4 class="card-title"><i class="fa fa-cog"></i>MANAGE USER</h4>
+                                <p class="card-text">MANAGE PATIENTS AND USERS HERE</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-6 col-lg-6">
+                        <div id="to-right" class="card text-white bg-success mb-3"  [routerLink]="['/home/patient/patientRecord']">
+                            <div class="card-header bg-light" style="color: black; font-weight: bold; padding-left: 4px;">VIEW ALL RECORDS</div>
+                
+                            <div class="card-body" style="padding-left: 10px;">
+                                <h4 class="card-title"><i class="glyphicon glyphicon-eye-open"></i>VIEW RECORDS</h4>
+                                <p class="card-text">VIEW PATIENT RECORD</p>
+                            </div>
+                        </div>
+                
+                        <div id="to-right" class="card border-success bg-light mb-3"   [routerLink]="['/home/aboutUs']">
+                            <div class="card-header bg-success" style="color: white; font-weight: bold; padding-left: 4px;">LEARN ABOUT US</div>
+                
+                            <div class="card-body"  style="color:black; padding-left: 10px;">
+                                <h4 class="card-title"><i class="fa fa-user"></i>ABOUT US</h4>
+                                <p class="card-text">CURIOUS? CLICK TO KNOW MORE</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </mat-card-content>
+    </mat-card>

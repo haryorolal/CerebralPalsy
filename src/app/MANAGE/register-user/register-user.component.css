@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+#RegPForm{
+    margin-left: 50px;
+    width: 800px;
+    height: 700px;
+    margin-top: 10px;
+
+  }
+  #buttonS{
+    background-color: green; 
+    border-bottom-right-radius: 1px solid white;
+    width: 80px;
+    height: 30px;
+  }
+
+  mat-card{
+    color: black;
+    width: 80%;
+  }

@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+
+  mat-card{
+      width: 80%;
+      height: 600px;
+  }
+
+#sect-one{
+    margin-right: 30px !important;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+#to-right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 200px;
+    width: 300px;       
+    box-shadow: 0 0 18px  rgba(49, 32, 15, 0.2), 0 0 20px 0 rgba(83, 68, 17, 0.19) !important;
+}
+.bg-light{
+    background-color: white;
+}

@@ -1,0 +1,76 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.app-is-mobile .app-toolbar{
+    position: fixed;
+    z-index: 2;
+}
+.app-sidenav-container{
+    flex: 1;
+}
+.app-is-mobile .app-sidenav-container{
+    flex: 1 0 auto;
+}
+.mat-sidenav{
+    width: 200px;
+}
+.sidenav{
+    margin-left: 12% !important;
+}
+.contain{
+    margin-top: 30px;  
+    left: 8%;
+    margin-right: 5%;
+}
+
+.mat-card-image{
+    width: 60px;
+    height: 50px;
+    position: relative;
+    padding-top: 8px;
+  
+  }
+
+div.layout{
+    top: 0;
+    margin:0;
+    padding: 0;
+}
+.fixed-top {
+    border-bottom: 4px solid rgb(89, 161, 77) !important;
+    background-color: white;
+    width: 100%;
+}
+.apptoolbar{
+    display: flex;
+}
+.flex-spacer{
+    flex-grow: 1;
+}
+.apptoolbar.homeLogin{
+    float: right !important;
+}
+
+
+
+
+
+
+
+/*img{
+    opacity: 0.6;
+    height: 730px;
+    max-height: 800px !important;
+    width: 100%;
+    object-fit: cover;
+    
+}*/
+/*#contain{           
+  
+}*/
